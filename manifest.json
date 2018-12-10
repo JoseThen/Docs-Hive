@@ -1,7 +1,7 @@
 {
-    "name": "Getting Started Example",
+    "name": "Loggs",
     "version": "1.0",
-    "description": "Build an Extension!",
+    "description": "Log monitoring chrome extension",
     "manifest_version": 2,
     "permissions": ["activeTab", "declarativeContent", "storage"],
     "background": {
@@ -25,5 +25,11 @@
         "64": "images/icon64.png",
         "128": "images/icon128.png"
     },
-    "options_page": "html/options.html"
+    "options_page": "html/options.html",
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": ["js/content.js"]
+    }]
 }
