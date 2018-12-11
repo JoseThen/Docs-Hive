@@ -6,6 +6,10 @@
         /* Pretty Modern Browsers */
 }
 
+html {
+    background: #FFFFFF;
+}
+
 body {
     max-width: 710px;
     min-width: 710px;
@@ -13,7 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: auto;
     margin-right: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -25,6 +29,7 @@ section.details {
     z-index: 1;
     box-shadow: -5px 0px 70px 0 rgba(0, 0, 0, 0.4);
     border-radius: 5px;
+    background: #FFFFFF;
 }
 
 #title {
@@ -39,6 +44,7 @@ section.details {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #000000cc;
+    margin: 0;
 }
 
 #setting_tabs {
@@ -48,20 +54,34 @@ section.details {
 }
 
 #setting_tabs>ul {
-    margin-block-start: 1em;
+    /* margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-end: 0px; */
     padding-inline-start: 40px;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 #setting_tabs>ul>li {
+    border-bottom: 2px solid transparent;
     color: #B0B0B2;
     line-height: 1.15;
     font-size: 18px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+#setting_tabs>ul>li:hover {
+    border-color: #0674D7;
+
+}
+
+#setting_tabs>ul>li.active {
+    border-color: #0674D7;
 }
 
 div.detailsBody {
