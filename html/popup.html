@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -8,62 +8,24 @@
 <body>
     <div class="wrapper">
         <div class="title">
-            <h1>Loggy</h1>
+            <h1>Docs Dock</h1>
         </div>
-        <button id="changeColor"></button>
+        <div class="docs-dock">
+            <ul class="docks">
+                <li class="dock">
+                    <div class="doc">Docker</div>
+                </li>
+                <li class="dock">
+                    <div class="doc">Git</div>
+                </li>
+                <li class="dock">
+                    <div class="doc">React</div>
+                </li>
+
+            </ul>
+        </div>
     </div>
     <script src="./../js/popup.js"></script>
-</body>
-
-</html> -->
-<html lang="en-US" dir="ltr">
-
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="skin/fonts.css">
-    <link rel="stylesheet" type="text/css" href="./../css/popup.css">
-    <script src="polyfill.js"></script>
-    <script src="ext/common.js"></script>
-    <script src="ext/content.js"></script>
-    <script src="i18n.js"></script>
-    <script src="./../js/popup.js"></script>
-</head>
-
-<body class="" tabindex="1">
-    <header>
-        <div class="top">
-            <h1>Loggy</h1>
-            <button id="options" class="i18n_options_short" aria-label="Options"></button>
-        </div>
-    </header>
-    <main>
-        <div id="page-info">
-            <div id="default-container">
-                <h2 class="i18n_stats_header">Number of items blocked</h2>
-                <div id="stats-page" class="card"><strong>0</strong> on this page</div>
-                <div id="stats-total" class="card"><strong>GitHub</strong> in total</div>
-                <div id="stats-total" class="card"><strong>AWS</strong> in total</div>
-                <div id="stats-total" class="card"><strong>Google</strong> in total</div>
-            </div>
-            <div id="block-element-container">
-                <div id="block-element-info" class="card">
-                    <strong class="i18n_easy_create_filter">Block element</strong>
-                    <span class="i18n_click_element_to_block_it">Click an element on the page to block it.</span>
-                </div>
-                <div class="options">
-                    <button id="block-element-cancel">
-                        <span class="i18n_cancel block">Cancel</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <span class="i18n_promote_abp_module">Interested in Adblock Plus on mobile?</span>
-        <button class="store apple" data-link="https://adblockplus.org/redirect?link=adblock_browser_ios_store&amp;lang=en-US"></button>
-        <button class="store android" data-link="https://adblockplus.org/redirect?link=adblock_browser_android_store&amp;lang=en-US"></button>
-    </footer>
-
 </body>
 
 </html>

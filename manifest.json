@@ -1,14 +1,14 @@
 {
-    "name": "Loggs",
+    "name": "Docs Dock",
     "version": "1.0",
-    "description": "Log monitoring chrome extension",
+    "description": "Developer Documentation Hub",
     "manifest_version": 2,
-    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "permissions": ["tabs"],
     "background": {
         "scripts": ["js/background.js"],
         "persistent": false
     },
-    "page_action": {
+    "browser_action": {
         "default_popup": "html/popup.html",
         "default_icon": {
             "16": "images/icon16.png",
