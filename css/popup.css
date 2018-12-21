@@ -6,6 +6,10 @@
         /* Pretty Modern Browsers */
 }
 
+a {
+    text-decoration: none;
+}
+
 :root {
     --the-font: 'Open Sans';
     --the-font-size: 24px;
@@ -38,7 +42,7 @@ html {
 }
 
 body {
-    width: 430px
+    width: 300px
 }
 
 div.title {
@@ -66,6 +70,23 @@ li.dock {
     margin: 10px;
     padding: var(--padding-primary);
     background-color: var(--background-color-primary);
+    overflow: hidden;
+    background: #f5f5f5;
+    text-transform: uppercase;
+    letter-spacing: .045em;
+    color: #6772e5;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+li.dock:hover {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-4px);
+    -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3);
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
 }
 
 div.doc {}
