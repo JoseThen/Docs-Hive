@@ -1,9 +1,26 @@
 @font-face {
-    font-family: 'Open Sans';
-    src: url('fonts/open-sans-regular.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('fonts/open-sans-regular.woff') format('woff')
-        /* Pretty Modern Browsers */
+    font-family: 'Karla';
+    font-weight: bold;
+    src: url('fonts/Karla-Bold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    src: url('fonts/Karla-Regular.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Karla';
+    font-style: italic;
+    src: url('fonts/Karla-Italic.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Karla';
+    font-style: italic;
+    font-weight: bold;
+    src: url('fonts/Karla-BoldItalic.ttf') format('truetype')
 }
 
 a {
@@ -22,9 +39,9 @@ a {
     --border-width-thick: 3px;
     --border-width-thin: 1px;
     --box-shadow-primary: 0 2px 4px 0 hsla(0, 0%, 84%, 0.5);
-    --color-secondary: #000000;
+    --color-secondary: #FFFFFF;
     --color-primary: #FFBA5F;
-    --font-size-big: 2em;
+    --font-size-big: 2.5em;
     --font-size-medium: 16px;
     --font-size-primary: 13px;
     --font-size-small: 12px;
@@ -35,7 +52,7 @@ a {
 }
 
 html {
-    font-family: 'Open Sans';
+    font-family: 'Karla';
     border-radius: 10px;
     background: #FFFFFF;
 }
@@ -91,6 +108,8 @@ li.dock:hover {
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3);
     -webkit-box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
     box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
 }
 
 div.doc {}
