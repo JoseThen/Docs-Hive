@@ -1,6 +1,7 @@
 # Docs Hive
 
 ## `A Chrome extension`
+[In the Chrome Store!](https://chrome.google.com/webstore/detail/doc-hive/npgiicnmobfdahphfjljdaiefflpabef)
 
 This repository contains the code for `Docs Hive`, an extension that holds Popular Developer Documentation in a contained popup.
 
