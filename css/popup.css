@@ -47,7 +47,7 @@ a {
     --font-size-small: 12px;
     --font-letter-spacing: .045em;
     --margin-primary: 16px;
-    --padding-primary: 16px;
+    --padding-primary: 10px;
     --padding-secondary: calc(var(--padding-primary) / 2);
 }
 
@@ -74,8 +74,6 @@ div.title>span::before {
     vertical-align: -25%;
     padding: 0 5px 0 0;
 }
-
-div.docs-dock {}
 
 ul.docks {
     list-style-type: none;
@@ -112,4 +110,7 @@ li.dock:hover {
     background-color: var(--color-primary);
 }
 
-div.doc {}
+.active {
+    color: var(--color-secondary) !important;
+    background-color: var(--color-primary) !important;
+}
